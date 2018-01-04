@@ -1,0 +1,51 @@
+function sumOfDigit(int numb){
+    while(n!=0){
+        rem = numb % 10;
+        sum = sum + rem;
+        numb = numb /10;
+    }
+}
+
+for(i=0; i<n; i++){
+    b[i] = sumOfDigit(a[i]);
+}
+
+int x,y;
+
+int min = Max.number
+for(i=0; i<n; i++){
+    for(j=i+1; j<n; j++){
+        subtraction = abs(b[i] - b[j]); //(abs là hàm lấy trị tuyệt đối nha)
+        if (subtraction != 0 && subtraction < min){
+            x=i;
+            y=j;
+        }
+    }
+}
+
+function pow(int a, int x){
+    if (x==0) 
+        return 1;
+    else
+        return a*pow(a, x-1);
+}
+
+function toPassword(int x, int y){
+    digit=0;
+    password=0;
+    while(y!=0){
+        rem = y % 10;
+        password = rem * pow(10,digit) + password;
+        y = y / 10;
+        digit++;
+    }
+    while(x!=0){
+        rem = x % 10;
+        password = rem * pow(10,digit) + password;
+        x = x / 10;
+        digit++;
+    }
+    return password;
+}
+
+toPassword(x,y)
